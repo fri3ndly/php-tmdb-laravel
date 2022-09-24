@@ -8,7 +8,7 @@ namespace Tmdb\Laravel;
 
 use Illuminate\Support\ServiceProvider;
 
-class TmdbServiceProviderLaravel5 extends ServiceProvider {
+class TmdbServiceProviderLaravel extends ServiceProvider {
 
     /**
      * Bootstrap the application events.
@@ -31,7 +31,7 @@ class TmdbServiceProviderLaravel5 extends ServiceProvider {
     {
         $this->setupConfiguration();
 
-        $this->app->bind('Tmdb\Laravel\Adapters\EventDispatcherAdapter', 'Tmdb\Laravel\Adapters\EventDispatcherLaravel5');
+        $this->app->bind('Tmdb\Laravel\Adapters\EventDispatcherAdapter', 'Tmdb\Laravel\Adapters\EventDispatcherLaravel');
     }
 
     /**
